@@ -1,0 +1,35 @@
+.customers__title {
+  margin-bottom: 50px;
+  @include font(700, 36px, 1.17, 0.03em);
+  text-align: center;
+  color: var(--color-titles);
+}
+
+.customers__list {
+  display: flex;
+  gap: 30px;
+}
+
+.customers__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  @extend %aligning;
+  color: #afb1b8;
+  transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+}
+
+.customers__icon {
+  fill: currentColor;
+  transition: fill 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--color-accent);
+  }
+}
