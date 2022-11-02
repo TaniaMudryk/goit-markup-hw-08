@@ -1,8 +1,35 @@
 @mixin font($fw, $fz, $lh, $ls) {
-    font-weight: $fw;
-    font-size: $fz;
-    line-height: $lh;
-    letter-spacing: $ls;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+// @include font($fw,$fz,$lh,$ls);
+
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
 }
 
-// @include font($fw,$fz,$lh,$ls);
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+// @mixin media($size) {
+//     @media screen and (min-width: $size) {
+//         @content;
+//     }
+// }
+
+// @mixin calc($count) {
+//     width: calc( ( 100% - 30px * ( $count - 1 ) ) / $count );
+// }
