@@ -2,6 +2,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
+  text-align: center;
+  @include desktop {
+    text-align: start;
+  }
 }
 
 .address {
@@ -27,8 +31,12 @@
 
 .footer-box {
   display: flex;
-  align-items: baseline;
-  gap: 93px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  @include desktop {
+    align-items: baseline;
+  }
 }
 
 .footer-title-list {
@@ -67,11 +75,18 @@
 
 .subscribe {
   display: flex;
-  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  @include desktop {
+  }
 }
 
 .input-subscribe {
-  width: 358px;
+  width: 100%;
+  @include desktop {
+    width: 358px;
+  }
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
