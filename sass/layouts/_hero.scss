@@ -1,21 +1,42 @@
 .hero {
-    text-align: center;
-    background: #2f303a;
-    padding: 200px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  text-align: center;
+  background: #2f303a;
+  padding: 120px 0;
+  background-image: var(--hero-gradient), url(../images/hero-mobl-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 480px;
+  @mixin retina2 {
+    background-image: var(--hero-gradient), url(../images/hero-mobl-2x.jpg);
+  }
+  @include tablet {
+    min-width: 768px;
+    background-image: var(--hero-gradient), url(../images/hero-tabl-1x.jpg);
+    @mixin retina2 {
+      background-image: var(--hero-gradient), url(../images/hero-tabl-2x.jpg);
+    }
+  }
+  @include desktop {
     min-width: 1600px;
+    padding: 200px 0;
+    background-image: var(--hero-gradient), url(../images/hero-bg.jpg);
+    @mixin retina2 {
+      background-image: var(--hero-gradient), url(../images/hero-bg-2x.jpg);
+    }
+  }
 }
 
 .hero-title {
-    @include font(900, 44px, 1.36, 0.06em);    
-    text-align: center;    
-    text-transform: uppercase;
-    color: #ffffff;
+  @include font(900, 26px, 1.62, 0.06em);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+  @include desktop {
+    @include font(900, 44px, 1.36, 0.06em);
     width: 696px;
-    margin-right: auto;
-    margin-left: auto;
+  }
 }

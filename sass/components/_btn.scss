@@ -11,7 +11,7 @@
 .hero-btn {
   @include font(700, 16px, 1.88, 0.06em);
   margin-top: 30px;
-  min-width: 216px;
+  min-width: 200px;
   height: 50px;
   padding: 10px 22px;
   color: #ffffff;
@@ -22,6 +22,11 @@
     color: var(--color-titles);
     transition: color 250ms var(--timing-function);
   }
+  @include desktop {
+   min-width: 216px;     
+     
+  }
+
 }
 
 .btn-subscribe {

@@ -17,8 +17,8 @@
 .modal {
   position: absolute;
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -28,6 +28,10 @@
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: translate 250ms var(--timing-function);
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -51,10 +55,13 @@
 }
 
 .modal-title {
-  @include font(700, 20px, 1.15, 0.03em);
+  @include font(700, 20px, 1.5, 0.03em);
   text-align: center;
   color: var(--color-titles);
   margin-bottom: 12px;
+  @include desktop {
+    @include font(700, 20px, 1.15, 0.03em);
+  }
 }
 
 .modal-field {
