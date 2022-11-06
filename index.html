@@ -51,7 +51,61 @@
             +38 096 111 11 11</a
           >
         </div>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="modal-close-icon" width="24" height="16">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu__top">
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg class="modal-close-icon" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-close-40px"></use>
+              </svg>
+            </button>
+
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link current" href="./index.html">Студія</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="">Контакти</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mob-menu__bottom">
+            <div class="mob-contacts">
+              <a class="mob-contacts__tel link" href="tel:+380961111111"> +38 096 111 11 11</a>
+              <a class="mob-contacts__mail link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </div>
+
+            <ul class="list mob-networks">
+              <li class="mob-networks__item">
+                <a class="mob-networks__link link" href="http://">Instagram</a>
+              </li>
+              <li class="mob-networks__item">
+                <a class="mob-networks__link link" href="http://">Twitter</a>
+              </li>
+              <li class="mob-networks__item">
+                <a class="mob-networks__link link" href="http://">Facebook</a>
+              </li>
+              <li class="">
+                <a class="mob-networks__link link" href="http://">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
     </header>
 
     <main>
@@ -536,6 +590,5 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
-    
   </body>
 </html>
