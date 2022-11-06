@@ -7,13 +7,13 @@
   background-position: center;
   background-size: cover;
   min-width: 480px;
-  @mixin retina2 {
+  @include retina2 {
     background-image: var(--hero-gradient), url(../images/hero-mobl-2x.jpg);
   }
   @include tablet {
     min-width: 768px;
     background-image: var(--hero-gradient), url(../images/hero-tabl-1x.jpg);
-    @mixin retina2 {
+    @include retina2 {
       background-image: var(--hero-gradient), url(../images/hero-tabl-2x.jpg);
     }
   }
@@ -21,7 +21,7 @@
     min-width: 1600px;
     padding: 200px 0;
     background-image: var(--hero-gradient), url(../images/hero-bg.jpg);
-    @mixin retina2 {
+    @include retina2 {
       background-image: var(--hero-gradient), url(../images/hero-bg-2x.jpg);
     }
   }
