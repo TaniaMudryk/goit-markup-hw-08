@@ -1109,12 +1109,22 @@ body {
 }
 
 .portfolio-item {
-  flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
   width: 370px;
   height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms var(--timing-function);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .portfolio-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1135,20 +1145,6 @@ body {
 }
 .portfolio-list:nth-child(3n+3) {
   margin-right: 0;
-}
-
-.portfolio-item {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .portfolio-item {
-    width: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .portfolio-item {
-    width: calc((100% - 60px) / 3);
-  }
 }
 
 .portfolio-item-wrap {
