@@ -591,10 +591,6 @@ body {
   color: var(--color-accent);
 }
 
-.mob-menu__link.current {
-  color: var(--color-accent);
-}
-
 .mob-contacts {
   display: block;
   margin-bottom: 64px;
