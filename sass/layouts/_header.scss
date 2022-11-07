@@ -51,20 +51,15 @@
 .contacts__tel {
   @include tablet {
     display: block;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: #757575;
+    @include font(500, 12px, 1.17, 0.02em);
+    color: var(--color-subtitles);
     margin-bottom: 10px;
   }
   @include desktop {
     @include font(500, 14px, 1.14, 0.02em);
-    color: var(--color-subtitles);
     display: inline-flex;
     align-items: center;
     transition: color 250ms var(--timing-function);
-
     &:hover,
     &:focus {
       color: var(--color-accent);
@@ -96,7 +91,6 @@
   @include desktop {
     width: 10px;
     height: 16px;
-
     margin-right: 10px;
   }
 }
@@ -170,23 +164,17 @@
 }
 
 .mob-menu__link {
-  // @include font
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
-  color: #212121;
-  // > .current {
-  //   color: var(--color-accent);
-  // }
+  @include font(500, 40px, 1.18, 0.02em);
+  color: var(--color-titles);
   &:focus {
     color: var(--color-accent);
   }
 }
 
-// .mob-current {
-//   color: var(--color-accent);
-// }
+.mob-menu__link.current {
+  // position: relative;
+  color: var(--color-accent);
+}
 
 .mob-contacts {
   display: block;
@@ -196,20 +184,14 @@
 .mob-contacts__tel {
   display: block;
   margin-bottom: 32px;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
+  @include font(500, 34px, 1.18, 0.02em);
   color: var(--color-accent);
 }
 
 .mob-contacts__mail {
   display: block;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: #757575;
+  @include font(500, 24px, 1.17, 0.02em);
+  color: var(--color-subtitles);
 }
 
 .mob-networks {
@@ -233,9 +215,6 @@
 }
 
 .mob-networks__link {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: #2196f3;
+  @include font(500, 18px, 1.228, 0.02em);
+  color: var(--color-accent);
 }
