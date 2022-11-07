@@ -133,8 +133,11 @@
 .check-text {
   display: flex;
   align-items: center;
-  @include font(400, 14px, 1.71, 0.03em);
+  @include font(400, 12px, 1.17, 0.03em);
   color: #757575;
+  @include desktop {
+    @include font(400, 14px, 1.71, 0.03em);
+  }
 
   span {
     @extend %aligning;
