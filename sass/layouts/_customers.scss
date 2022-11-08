@@ -1,8 +1,11 @@
 .customers__title {
   margin-bottom: 50px;
-  @include font(700, 36px, 1.17, 0.03em);
+  @include font(700, 28px, 1.18, 0.03em);
   text-align: center;
   color: var(--color-titles);
+  @include desktop {
+    @include font(700, 36px, 1.17, 0.03em);
+  }
 }
 
 .customers__list {
