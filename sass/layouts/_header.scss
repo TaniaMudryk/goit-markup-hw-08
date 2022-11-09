@@ -1,11 +1,15 @@
 .header {
   border: 1px solid #eeeeee;
-  background: #ffffff;
+  background: #ffffff;  
 }
 
 .header__container {
   display: flex;
   align-items: center;
+  height: 60px;  
+    @include tablet {
+      height: 80px;
+    }
 }
 
 .navigation {
@@ -42,8 +46,7 @@
   }
   @include desktop {
     display: flex;
-    gap: 30px;
-    // margin-left: auto;
+    gap: 30px;    
   }
 }
 
