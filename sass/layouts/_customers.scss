@@ -1,4 +1,5 @@
 .customers__title {
+<<<<<<< HEAD
   margin-bottom: 30px;
   @include font(700, 28px, 1.18, 0.03em);
   text-align: center;
@@ -8,6 +9,15 @@
       @include font(700, 36px, 1.17, 0.03em);
       margin-bottom: 50px;
     }
+=======
+  margin-bottom: 50px;
+  @include font(700, 28px, 1.18, 0.03em);
+  text-align: center;
+  color: var(--color-titles);
+  @include desktop {
+    @include font(700, 36px, 1.17, 0.03em);
+  }
+>>>>>>> 1f046b2d1c1f2e5b21cb14d0cf7d4f688806f4d2
 }
 
 .customers__list {

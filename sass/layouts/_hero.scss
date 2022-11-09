@@ -5,8 +5,12 @@
   background-image: var(--hero-gradient), url(../images/hero-mobl-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
+<<<<<<< HEAD
   background-size: cover;
   width: 100%;
+=======
+  background-size: cover;  
+>>>>>>> 1f046b2d1c1f2e5b21cb14d0cf7d4f688806f4d2
   @include retina2 {
     background-image: var(--hero-gradient), url(../images/hero-mobl-2x.jpg);
   }
