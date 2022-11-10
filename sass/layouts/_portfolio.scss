@@ -3,50 +3,22 @@
 // }
 
 .portfolio-list-btn {
-<<<<<<< HEAD
-=======
-  width: 100%;  
->>>>>>> 1f046b2d1c1f2e5b21cb14d0cf7d4f688806f4d2
   margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   gap: 8px;
-<<<<<<< HEAD
   @include tablet {
     justify-content: center;
   }
   @include desktop {
-=======
-  @include desktop {
-    justify-content: center;
->>>>>>> 1f046b2d1c1f2e5b21cb14d0cf7d4f688806f4d2
     margin-bottom: 56px;
   }
 }
 
 .portfolio-item {
-<<<<<<< HEAD
   width: 450x;
   height: 440px;
-=======
-  width: 450px;
-  height: 404px;
-
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 30px) / 2);
-    width: 354px;
-    height: 440px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 60px) / 3);
-    width: 370px;
-    height: 404px;
-  }
-  width: 370px;
-  height: 404px;
->>>>>>> 1f046b2d1c1f2e5b21cb14d0cf7d4f688806f4d2
   background: #ffffff;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms var(--timing-function);

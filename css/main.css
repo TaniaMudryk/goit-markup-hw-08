@@ -71,6 +71,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  /* outline: 1px solid red; */
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -546,17 +547,14 @@ body {
 }
 
 .menu-open-btn {
+  margin-left: auto;
+  position: absolute;
   width: 24px;
   height: 16px;
   right: 22px;
   top: 22px;
   background-color: transparent;
   border: none;
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .menu-open-btn {
-    margin-left: auto;
-  }
 }
 .menu-open-btn:focus {
   fill: var(--color-accent);
@@ -672,10 +670,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-<<<<<<< HEAD
   width: 100%;
-=======
->>>>>>> 1f046b2d1c1f2e5b21cb14d0cf7d4f688806f4d2
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -876,10 +871,7 @@ body {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-<<<<<<< HEAD
     margin-bottom: 50px;
-=======
->>>>>>> 1f046b2d1c1f2e5b21cb14d0cf7d4f688806f4d2
   }
 }
 
@@ -966,14 +958,6 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .customers__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
   }
 }
 
@@ -1164,17 +1148,12 @@ body {
 }
 
 .portfolio-list-btn {
-<<<<<<< HEAD
-=======
-  width: 100%;
->>>>>>> 1f046b2d1c1f2e5b21cb14d0cf7d4f688806f4d2
   margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   gap: 8px;
 }
-<<<<<<< HEAD
 @media screen and (min-width: 768px) {
   .portfolio-list-btn {
     justify-content: center;
@@ -1182,25 +1161,13 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .portfolio-list-btn {
-=======
-@media screen and (min-width: 1200px) {
-  .portfolio-list-btn {
-    justify-content: center;
->>>>>>> 1f046b2d1c1f2e5b21cb14d0cf7d4f688806f4d2
     margin-bottom: 56px;
   }
 }
 
 .portfolio-item {
-<<<<<<< HEAD
   width: 450x;
   height: 440px;
-=======
-  width: 450px;
-  height: 404px;
-  width: 370px;
-  height: 404px;
->>>>>>> 1f046b2d1c1f2e5b21cb14d0cf7d4f688806f4d2
   background: #ffffff;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms var(--timing-function);

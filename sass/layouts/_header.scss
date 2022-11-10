@@ -46,11 +46,7 @@
   }
   @include desktop {
     display: flex;
-<<<<<<< HEAD
     gap: 30px;    
-=======
-    gap: 30px;
->>>>>>> 1f046b2d1c1f2e5b21cb14d0cf7d4f688806f4d2
   }
 }
 
@@ -120,10 +116,8 @@
 }
 
 .menu-open-btn {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    margin-left: auto;
-  }
-  // position: absolute;
+  margin-left: auto;
+  position: absolute;
   width: 24px;
   height: 16px;
   right: 22px;
