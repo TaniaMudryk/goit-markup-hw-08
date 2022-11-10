@@ -16,8 +16,7 @@
       background-image: var(--hero-gradient), url(../images/hero-tabl-2x.jpg);
     }
   }
-  @include desktop {
-    max-width: 1600px;
+  @include desktop {    
     padding: 200px 0;
     background-image: var(--hero-gradient), url(../images/hero-bg.jpg);
     @include retina2 {
